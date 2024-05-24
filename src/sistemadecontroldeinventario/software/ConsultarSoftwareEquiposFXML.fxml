@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="1366.0" style="-fx-background-color: #C3D9EA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadecontroldeinventario.software.ConsultarSoftwareEquiposFXMLControlador">
+   <children>
+      <Label layoutX="542.0" layoutY="589.0" opacity="0.14" text="inventario" textFill="#004aad">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="387.0" layoutY="521.0" opacity="0.14" text="Sistema de control de" textFill="#004aad">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="443.0" fitWidth="330.0" layoutX="518.0" layoutY="66.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/Logo_de_la_Universidad_Veracruzana.svg.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="80.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1366.0" />
+      <Label layoutX="385.0" layoutY="-11.0" text="Equipos de Cómputo" textFill="WHITE">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tvEquiposComputo" layoutX="133.0" layoutY="149.0" prefHeight="450.0" prefWidth="1100.0" style="-fx-border-color: #6ABCDC;">
+        <columns>
+          <TableColumn fx:id="tcModelo" prefWidth="314.0" resizable="false" text="Modelo" />
+          <TableColumn fx:id="tcMarca" prefWidth="299.0" resizable="false" text="Marca" />
+            <TableColumn fx:id="tcPosicion" prefWidth="280.0" resizable="false" text="Posición" />
+            <TableColumn fx:id="tcEstado" prefWidth="131.0" resizable="false" text="Estado" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="70.0" fitWidth="61.0" layoutX="25.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/botonregresar_blanco.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="24.0" layoutY="5.0" mnemonicParsing="false" onAction="#cerrarVentana" opacity="0.0" prefHeight="61.0" prefWidth="61.0" text="Regresar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="631.0" layoutY="656.0" mnemonicParsing="false" onAction="#eliminarSoftwareEquipo" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: #058125;" text="Eliminar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="24.0" layoutY="81.0" prefHeight="59.0" prefWidth="174.0" text="Software:">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSoftware" layoutX="213.0" layoutY="81.0" prefHeight="59.0" prefWidth="879.0">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

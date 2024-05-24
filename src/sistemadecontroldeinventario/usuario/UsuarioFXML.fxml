@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="1366.0" style="-fx-background-color: #C3D9EA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadecontroldeinventario.usuario.UsuarioFXMLControlador">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="80.0" layoutY="-8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1366.0" />
+      <ImageView fitHeight="443.0" fitWidth="330.0" layoutX="518.0" layoutY="63.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/Logo_de_la_Universidad_Veracruzana.svg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="542.0" layoutY="586.0" opacity="0.14" text="inventario" textFill="#004aad">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="61.0" layoutX="22.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/botonregresar_blanco.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="387.0" layoutY="518.0" opacity="0.14" text="Sistema de control de" textFill="#004aad">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="567.0" layoutY="-14.0" text="Usuarios" textFill="WHITE">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Button layoutX="22.0" layoutY="2.0" mnemonicParsing="false" onAction="#cerrarVentana" opacity="0.0" prefHeight="61.0" prefWidth="61.0" text="Regresar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="tvUsuarios" layoutX="237.0" layoutY="119.0" prefHeight="418.0" prefWidth="902.0" style="-fx-border-color: #6ABCDC;">
+         <columns>
+            <TableColumn fx:id="tcNombre" prefWidth="381.0" text="Nombre completo" />
+            <TableColumn fx:id="tcCorreo" prefWidth="270.0" text="Correo Institucional" />
+            <TableColumn fx:id="tcCargo" prefWidth="250.0" text="Cargo" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00aa45" height="80.0" layoutY="652.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1366.0" />
+      <Button layoutX="1126.0" layoutY="667.0" mnemonicParsing="false" onAction="#eliminarUsuario" style="-fx-background-color: #058125;" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="757.0" layoutY="667.0" mnemonicParsing="false" onAction="#consultarUsuario" style="-fx-background-color: #058125;" text="Consultar " textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="398.0" layoutY="668.0" mnemonicParsing="false" onAction="#modificarUsuario" style="-fx-background-color: #058125;" text="Modificar" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="83.0" layoutY="667.0" mnemonicParsing="false" onAction="#registrarUsuario" style="-fx-background-color: #058125;" text="Registrar" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1273.0" layoutY="-2.0" mnemonicParsing="false" onAction="#cerrarSesion" style="-fx-background-color: #004aad;">
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/cerrarsesion_blanco.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

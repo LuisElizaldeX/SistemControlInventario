@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="900.0" style="-fx-background-color: #C3D9EA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadecontroldeinventario.hardware.perifericos.RegistrarPerifericoFXMLControlador">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="900.0" />
+      <Label layoutX="232.0" layoutY="-4.0" text="Registrar Periférico" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="49.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagenes/botonregresar_blanco.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="48.0" layoutY="8.0" mnemonicParsing="false" onAction="#cerrarVentana" opacity="0.0" prefHeight="45.0" prefWidth="45.0" text="Regresar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="tfMarca" layoutX="48.0" layoutY="105.0" prefHeight="31.0" prefWidth="180.0" style="-fx-border-color: #6ABCDC;" />
+      <Label layoutX="49.0" layoutY="78.0" text="Marca">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="78.0" text="Modelo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfModelo" layoutX="301.0" layoutY="103.0" prefHeight="31.0" prefWidth="180.0" style="-fx-border-color: #6ABCDC;" />
+      <TextField fx:id="tfNumeroSerie" layoutX="576.0" layoutY="103.0" prefHeight="31.0" prefWidth="270.0" style="-fx-border-color: #6ABCDC;" />
+      <Label layoutX="576.0" layoutY="78.0" text="Número de serie">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="175.0" text="Tipo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTipo" layoutX="48.0" layoutY="202.0" prefHeight="31.0" prefWidth="180.0" style="-fx-border-color: #6ABCDC;" />
+      <ComboBox fx:id="cbTipoConexion" layoutX="301.0" layoutY="202.0" prefHeight="31.0" prefWidth="180.0" promptText="Seleccionar tipo de conexión" />
+      <Label layoutX="301.0" layoutY="175.0" text="Tipo de conexión">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="754.0" layoutY="297.0" mnemonicParsing="false" onAction="#cancelarOperacion" style="-fx-background-color: RED;" text="Cancelar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="46.0" layoutY="297.0" mnemonicParsing="false" onAction="#registrarPeriferico" style="-fx-background-color: #00A651;" text="Registrar" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbErrorMarca" layoutX="49.0" layoutY="134.0" textFill="RED" />
+      <Label fx:id="lbErrorModelo" layoutX="301.0" layoutY="134.0" textFill="RED" />
+      <Label fx:id="lbErrorNumeroSerie" layoutX="576.0" layoutY="134.0" textFill="RED" />
+      <Label fx:id="lbErrorTipo" layoutX="49.0" layoutY="233.0" textFill="RED" />
+      <Label fx:id="lbErrorTipoConexion" layoutX="301.0" layoutY="233.0" textFill="RED" />
+   </children>
+</AnchorPane>

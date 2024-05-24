@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="1366.0" style="-fx-background-color: #C3D9EA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadecontroldeinventario.hardware.VentanaHardwareFXMLControlador">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="80.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1366.0" />
+      <Label layoutX="547.0" layoutY="-10.0" prefHeight="93.0" prefWidth="273.0" text="Hardware" textFill="WHITE">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="61.0" layoutX="35.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/botonregresar_blanco.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="34.0" layoutY="6.0" mnemonicParsing="false" onAction="#cerrarVentana" opacity="0.0" prefHeight="61.0" prefWidth="61.0" text="Regresar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnEquiposComputo" contentDisplay="TOP" layoutX="66.0" layoutY="190.0" mnemonicParsing="false" onAction="#desplegarVentanaEquiposComputo" prefHeight="300.0" prefWidth="385.0" style="-fx-background-color: #C3D9EA;" text="Equipos de Cómputo" textFill="#004aad">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="300.0" fitWidth="385.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/pc.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font></Button>
+      <Button fx:id="btnPerifericos" contentDisplay="TOP" layoutX="977.0" layoutY="208.0" mnemonicParsing="false" onAction="#desplegarVentanaPerifericos" prefHeight="268.0" prefWidth="240.0" style="-fx-background-color: #C3D9EA;" text="Periféricos" textFill="#004aad">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="262.0" fitWidth="267.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/mouse.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      <Button layoutX="1247.0" layoutY="2.0" mnemonicParsing="false" onAction="#cerrarSesion" style="-fx-background-color: #004aad;">
+         <graphic>
+            <ImageView fitHeight="60.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/cerrarsesion_blanco.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnBitacora" contentDisplay="TOP" layoutX="514.0" layoutY="194.0" mnemonicParsing="false" onAction="#desplegarBitacora" prefHeight="290.0" prefWidth="339.0" style="-fx-background-color: #C3D9EA;" text="Bitácora" textFill="#004aad">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="290.0" fitWidth="339.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Imagenes/monitoring.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Button>
+      
+   </children>
+</AnchorPane>

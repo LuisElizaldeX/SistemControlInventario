@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="1366.0" style="-fx-background-color: #C3D9EA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemadecontroldeinventario.usuario.RegistrarUsuarioFXMLControlador">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004aad" height="80.0" layoutY="-9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1366.0" />
+      <ImageView fitHeight="443.0" fitWidth="330.0" layoutX="518.0" layoutY="71.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/Logo_de_la_Universidad_Veracruzana.svg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="376.0" layoutY="531.0" opacity="0.14" text="Sistema de control de" textFill="#004aad">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="542.0" layoutY="599.0" opacity="0.14" text="inventario" textFill="#004aad">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="441.0" layoutY="-15.0" text="Registrar Usuario" textFill="WHITE">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <Button layoutX="35.0" layoutY="654.0" mnemonicParsing="false" onAction="#registrarUsuario" style="-fx-background-color: #00A651;" text="Registrar" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="1211.0" layoutY="654.0" mnemonicParsing="false" onAction="#cancelarOperacion" style="-fx-background-color: RED;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="70.0" fitWidth="61.0" layoutX="47.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Imagenes/botonregresar_blanco.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="46.0" layoutY="1.0" mnemonicParsing="false" onAction="#cerrarVentana" opacity="0.0" prefHeight="61.0" prefWidth="61.0" text="Regresar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="tfnombre" layoutX="274.0" layoutY="374.0" prefHeight="31.0" prefWidth="300.0" style="-fx-border-color: #6ABCDC;" />
+      <TextField fx:id="tfCorreo" layoutX="757.0" layoutY="369.0" prefHeight="31.0" prefWidth="308.0" style="-fx-border-color: #6ABCDC;" />
+      <Label layoutX="275.0" layoutY="353.0" text="Nombre completo">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="757.0" layoutY="503.0" text="Cargo">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="757.0" layoutY="348.0" text="Correo Institucional">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="503.0" text="Contraseña">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+
+      <TextField fx:id="tfContrasenia" layoutX="274.0" layoutY="524.0" prefHeight="31.0" prefWidth="300.0" style="-fx-border-color: #6ABCDC;" />
+      <ImageView fx:id="ivFoto" fitHeight="205.0" fitWidth="282.0" layoutX="542.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="613.0" layoutY="317.0" mnemonicParsing="false" onAction="#subirFoto" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #004aad;" text="Subir foto" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+
+      <ComboBox fx:id="cbCargo" layoutX="757.0" layoutY="527.0" prefHeight="25.0" prefWidth="300.0" />
+   </children>
+</AnchorPane>

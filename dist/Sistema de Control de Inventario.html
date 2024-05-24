@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Sistema de Control de Inventario.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iU2lzdGVtYSBkZSBDb250cm9sIGRlIEludmVudGFyaW8uam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+U2lzdGVtYSBkZSBDb250cm9sIGRlIEludmVudGFyaW88L3RpdGxlPg0KICAgIDx2ZW5kb3I+ZnJveWw8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0ibGliXG15c3FsLWNvbm5lY3Rvci1qYXZhLTUuMS40OS5qYXIiIHNpemU9IjEwMDY5MDQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJzaXN0ZW1hZGVjb250cm9sZGVpbnZlbnRhcmlvLlNpc3RlbWFEZUNvbnRyb2xEZUludmVudGFyaW8iICBuYW1lPSJTaXN0ZW1hIGRlIENvbnRyb2wgZGUgSW52ZW50YXJpbyIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedsistemadecontroldeinventario() {
+        dtjava.embed(
+            {
+                id : 'sistemadecontroldeinventario',
+                url : 'Sistema de Control de Inventario.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iU2lzdGVtYSBkZSBDb250cm9sIGRlIEludmVudGFyaW8uam5scCI+DQogIDxpbmZvcm1hdGlvbj4NCiAgICA8dGl0bGU+U2lzdGVtYSBkZSBDb250cm9sIGRlIEludmVudGFyaW88L3RpdGxlPg0KICAgIDx2ZW5kb3I+ZnJveWw8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0ibGliXG15c3FsLWNvbm5lY3Rvci1qYXZhLTUuMS40OS5qYXIiIHNpemU9IjEwMDY5MDQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJzaXN0ZW1hZGVjb250cm9sZGVpbnZlbnRhcmlvLlNpc3RlbWFEZUNvbnRyb2xEZUludmVudGFyaW8iICBuYW1lPSJTaXN0ZW1hIGRlIENvbnRyb2wgZGUgSW52ZW50YXJpbyIgLz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedsistemadecontroldeinventario);
+</script>
+
+</head><body>
+<h2>Test page for <b>Sistema de Control de Inventario</b></h2>
+  <b>Webstart:</b> <a href='Sistema de Control de Inventario.jnlp' onclick="return launchApplication('Sistema de Control de Inventario.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
